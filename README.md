@@ -1,54 +1,48 @@
-# gpt-investor
+# claude-investor-aws
 
-[![Twitter Follow](https://img.shields.io/twitter/follow/mattshumer_?style=social)](https://twitter.com/mattshumer_)
-# Claude-Investor | The first release in the gpt-investor repo
+# Claude-Investor | gpt-investorリポジトリの最初のリリース
 
-Claude-Investor is an experimental investment analysis agent that utilizes the Claude 3 Opus and Haiku models to provide comprehensive insights and recommendations for stocks in a given industry. It retrieves financial data, news articles, and analyst ratings for companies, performs sentiment analysis, and generates comparative analyses to rank the companies based on their investment potential.
+Claude-Investorは、Claude 3 OpusとHaikuモデルを利用して、特定の業界の株式に関する包括的な洞察とレコメンデーションを提供する実験的な投資分析エージェントです。企業の財務データ、ニュース記事、アナリストレーティングを取得し、センチメント分析を行い、投資魅力度に基づいて企業を比較分析してランク付けします。
 
-## Workflow
+## ワークフロー
 
-- Generates a list of ticker symbols for major companies in a specified industry
-- Retrieves historical price data, balance sheets, financial statements, and news articles for each company
-- Performs sentiment analysis on news articles to gauge market sentiment
-- Retrieves analyst ratings and price targets for each company
-- Conducts industry and sector analysis to understand market trends and competitive landscape
-- Generates comparative analyses between the selected company and its peers
-- Provides a final investment recommendation for each company based on the comprehensive analysis, including price targets
-- Ranks the companies within the industry based on their investment attractiveness
+- 指定された業界の主要企業のティッカーシンボルのリストを生成
+- 各企業の過去の価格データ、貸借対照表、財務諸表、ニュース記事を取得
+- ニュース記事に対してセンチメント分析を実行し、市場のセンチメントを把握
+- 各企業のアナリストレーティングと目標株価を取得
+- 業界および業種分析を行い、市場動向と競争環境を理解
+- 選択された企業とその競合他社との比較分析を生成
+- 包括的な分析に基づいて各企業の最終的な投資レコメンデーションを提供(目標株価を含む)
+- 投資魅力度に基づいて業界内の企業をランク付け
 
-## Requirements
+## 要件
 
-To run Claude-Investor, you need an Anthropic API key for accessing the Claude AI model.
+Claude-Investorを実行するには、ClaudeAIモデルにアクセスするためのAnthropic APIキーが必要です。
 
-## Usage
+## 使用方法
 
-1. Open the `claude_investor.ipynb` notebook in Google Colab or Jupyter Notebook.
+1. Sagemaker Notebookで `claude_investor.ipynb` ノートブックを開きます。
 
-2. Replace the placeholder for `ANTHROPIC_API_KEY` in the notebook with your Anthropic API key.
+2. ノートブックの `ANTHROPIC_API_KEY` のプレースホルダーを、あなたのAnthropic APIキーに置き換えます。
 
-3. Run the notebook cells sequentially to execute the code.
+3. ノートブックのセルを順番に実行します。
 
-4. When prompted, enter the industry you want to analyze.
+4. 分析したい業界を入力するよう求められたら入力します。
 
-5. Wait for the AI system to produce a report.
+5. AIシステムがレポートを作成するのを待ちます。
 
-## Disclaimer
+## 免責事項
 
-Claude-Investor is an educational and informational tool designed to assist in investment analysis. It should not be considered as financial advice or a substitute for professional investment guidance. Always conduct thorough research and consult with a qualified financial advisor before making any investment decisions.
+Claude-Investorは、投資分析を支援するための教育およびインフォメーショナルツールです。これは投資アドバイスや専門的な投資ガイダンスの代替とはみなされません。投資判断を行う前には、必ず十分な調査を行い、資格のある財務アドバイザーに相談してください。
 
-## License
+## ライセンス
 
-This project is licensed under the [MIT License](LICENSE).
+このプロジェクトは [MIT License](LICENSE) の下でライセンスされています。
 
-## Contributing
+## 貢献
 
-Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
+貢献は大歓迎です!問題を発見した場合や改善の提案がある場合は、issueを開くか、プルリクエストを送ってください。
 
-Some known improvement areas:
-- improve the industry analysis module to use real-time data
+既知の改善領域:
+- 実時間データを使用して業界分析モジュールを改善する
 
-## Contact
-
-Matt Shumer - [@mattshumer_](https://twitter.com/mattshumer_)
-
-Lastly, if you want to try something even cooler than this, sign up for [HyperWrite Personal Assistant](https://app.hyperwriteai.com/personalassistant) (most of my time is spent on this). It's basically an AI with access to real-time information that a) is incredible at writing naturally, and b) can operate your web browser to complete tasks for you.
